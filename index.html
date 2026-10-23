@@ -24,7 +24,6 @@
             position: relative;
         }
 
-        /* خلفية ذات إضاءة خافتة متدرجة */
         body::before {
             content: '';
             position: absolute;
@@ -47,7 +46,6 @@
             z-index: 0;
         }
 
-        /* البطاقة الرئيسية بتأثير الزجاج الاحترافي */
         .card {
             position: relative;
             z-index: 1;
@@ -69,7 +67,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* أثر الصورة الشخصية الفاخر */
         .avatar-glow {
             width: 110px;
             height: 110px;
@@ -103,98 +100,7 @@
         .tagline {
             font-size: 15px;
             color: #9ca3af;
-            margin-bottom: 30px;
             letter-spacing: 0.5px;
-        }
-
-        /* أقسام المعلومات */
-        .box {
-            background: rgba(31, 41, 55, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 20px;
-            text-align: right;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .box:hover {
-            transform: translateY(-3px);
-            border-color: rgba(99, 102, 241, 0.4);
-        }
-
-        .box h3 {
-            font-size: 16px;
-            color: #818cf8;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .box p {
-            font-size: 14px;
-            color: #d1d5db;
-            line-height: 1.7;
-        }
-
-        /* الوسوم والمهارات */
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
-        }
-
-        .tag {
-            background: rgba(99, 102, 241, 0.15);
-            color: #a5b4fc;
-            border: 1px solid rgba(99, 102, 241, 0.3);
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        /* الأزرار الفاخرة */
-        .actions {
-            display: flex;
-            gap: 15px;
-            margin-top: 25px;
-        }
-
-        .btn {
-            flex: 1;
-            padding: 14px 20px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #6366f1, #4f46e5);
-            color: #ffffff;
-            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
-        }
-
-        .btn-primary:hover {
-            box-shadow: 0 12px 25px rgba(99, 102, 241, 0.5);
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: #e5e7eb;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-        }
-
-        .btn-outline:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -206,27 +112,6 @@
         </div>
         <h1>Moushichem</h1>
         <p class="tagline">مطوّر ويب ومبتكر حلول برمجية</p>
-
-        <div class="box">
-            <h3>✨ نبذة عني</h3>
-            <p>أعشق بناء وتطوير منصات الويب الحديثة. تم إنشاء وتطوير هذا الموقع واستضافته بالكامل من الهاتف باستخدام بيئة Termux و منصة GitHub Pages.</p>
-        </div>
-
-        <div class="box">
-            <h3>🛠️ المهارات التقنية</h3>
-            <div class="tags">
-                <span class="tag">HTML5 & CSS3</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Git & GitHub</span>
-                <span class="tag">Termux / Linux CLI</span>
-                <span class="tag">UI/UX Design</span>
-            </div>
-        </div>
-
-        <div class="actions">
-            <a href="https://github.com/moushichem-ctrl" target="_blank" class="btn btn-primary">زيارة GitHub</a>
-            <a href="https://github.com/moushichem-ctrl/mysite" target="_blank" class="btn btn-outline">كود المشروع</a>
-        </div>
     </div>
 
 </body>
